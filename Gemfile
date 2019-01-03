@@ -40,6 +40,10 @@ gem 'simple_form'
 gem 'devise'
 gem 'activeadmin'
 
+#add in our image upload
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog-aws'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
