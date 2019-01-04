@@ -23,13 +23,15 @@
     </div>
 
 <header> <h1><%= link_to "Source", root_path %></h1>
-
   <nav>
     <% if is_logged_in? %>
     <strong> <%= @current_user.username %></strong> |
     <%= link_to "All Images", items_path %> |
     <%= link_to "All Categories", categories_path %> |
-    <%= link_to "Log out", session_path, method: :delete %>
+    <%= link_to "Log out", session_path, method: :delete %> |   
+    <div class="search-form">  <form action="">
+        <input type="text" name="q" value="<%= params[:q] %>" placeholder="Search Images Here">
+        </form></div>
     <% else %>
     <%= link_to "Sign up", new_user_path, class: "button" %>
     <%= link_to "Login", new_session_path, class: "button" %>

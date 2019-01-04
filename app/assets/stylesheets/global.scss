@@ -182,3 +182,18 @@ div.title {
     outline: none;
   }
 }
+
+div.search-form{
+  display: inline-block;
+}
+
+div.search-form input{
+  background-color: transparent;
+  color: #FFF;
+  border: none;
+  border-bottom: 2px solid;
+}
+
+div.search-form input:focus{
+    outline: none;
+}
