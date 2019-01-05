@@ -52,6 +52,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
 
+#add in stripe gem
+gem 'stripe'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
