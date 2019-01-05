@@ -17,6 +17,11 @@ resources :users
 resource :session
 #users can only have one session but a user can sign up multiple times
 
+
+
+resource :account
+#users can only edit 1 account
+
 get "about", to: "pages#about"
 
 root "pages#home"

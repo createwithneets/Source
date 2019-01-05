@@ -12,7 +12,7 @@ def create
 
   #check if user can save
 
-  if @user.save
+  if @user.save_and_subscribe
     session[:user_id] = @user.id
 #let the user know they've signed up
     flash[:success] = "Welcome to Source!"
@@ -27,7 +27,7 @@ render "new"
 end
 
 def form_params
-  params.require(:user).permit(:name, :username, :email, :password, :password_confirmation)
+  params.require(:user).permit(:name, :username, :email, :password, :password_confirmation, :subscription_plan, :stripe_token)
 
 end
 end
